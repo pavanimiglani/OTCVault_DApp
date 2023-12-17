@@ -1,0 +1,11 @@
+/* ContractInteraction.css */
+.contract-interaction {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.contract-interaction h2 {
+    color: #4CAF50;
+}

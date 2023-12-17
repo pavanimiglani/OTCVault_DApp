@@ -1,14 +1,18 @@
 require("@nomiclabs/hardhat-waffle");
-const { privateKey1, privateKey2 } = require('./secrets.json');
+require("@nomiclabs/hardhat-etherscan");
+
+const ALCHEMY_API_KEY = "Xvel1_orEEzWuAJPm2XeIh6fBbbh-t0e";
+const SEPOLIA_PRIVATE_KEY = "64d66fc927c75aff55deb3875ac4c94fd21a9a7c97a9a0757ed7642cd038bf24";
 
 module.exports = {
+  solidity: "0.8.20",
+  etherscan: {
+    apiKey: "SAHD4MM7R3TXPKHWVHQFUNNHU4IAEIA44M",
+  },
   networks: {
     sepolia: {
-      url: "https://sepolia.infura.io/v3/2d7682d0b4a5400aad7332bfd3d2bbaa",
-      accounts: [privateKey1]
+      url: `https://eth-sepolia.g.alchemy.com/v2/${ALCHEMY_API_KEY}`,
+      accounts: [`0x${SEPOLIA_PRIVATE_KEY}`]
     }
-  },
-  solidity: "0.8.20",
+  }
 };
-
-//Contract deployed to address: 0x937dc6661f64D2322Dc8583545ca9Ede0F6B07A9

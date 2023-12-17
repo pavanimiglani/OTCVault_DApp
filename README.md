@@ -1,32 +1,25 @@
-# OTCVault_DApp Project
+# OTC Trade DApp Frontend
 
-This decentralized application (DApp) enables Over-The-Counter (OTC) trading of ERC20 tokens without intermediaries. Users can create, browse, and fulfill token exchange offers directly on the Ethereum blockchain.
+## Description
+This project is the frontend for the OTC (Over-The-Counter) Trade Decentralized Application (DApp) built with React. It interacts with the Ethereum blockchain, allowing users to create and execute token trade listings via a smart contract.
 
-## Project Structure
+## Features
+- Connect to Ethereum wallets (e.g., MetaMask).
+- Create new trade listings.
+- View available trade listings.
+- Execute trades directly from the interface.
 
-The project consists of the following directories and files:
+## Prerequisites
+Before running this project, ensure you have the following installed:
+- [Node.js](https://nodejs.org/) (v12 or higher recommended)
+- [npm](https://www.npmjs.com/) (usually comes with Node.js)
+- A web browser with the MetaMask extension installed.
 
-- `/contracts`: Contains Solidity smart contracts. The main contract file is `Listing.sol`.
-- `/test`: Contains test files to validate smart contract functionalities.The main test file is 'OTC Test.js'. 
-- `hardhat.config.js`: Configuration file for the Hardhat Ethereum development environment.
-- `/scripts`: Includes deployment scripts. The main deployment script is `deploy.js`.
+### Install the necessary packages:
 
-### Prerequisites
 
-- Node.js and npm installed.
-- Hardhat configured globally or locally in the project.
+- npm install
 
-### Installation
+### To run the application on the local host:
 
-1. Clone this repository.
-2. Install dependencies:
-   ```bash
-   npm install
-
-### Compiling 
-
-npx hardhat compile
-
-### Deployment
-
-npx hardhat run scripts/deploy.js --network sepolia
+- npm start
